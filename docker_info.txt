@@ -3,6 +3,6 @@ docker image tag mongo mongodb
 docker volume create cars_vol
 docker container run -d --name mymongo -v cars_vol:${PWD} mongodb mongod
 docker exec -ti mymongo bash
-docker(for local db) / URL(for Atlas - cloud server)
+docker mongo(for local db) / URL(for Atlas - cloud server)
 
 * No necessity in creating a volume. We have cloud server *
